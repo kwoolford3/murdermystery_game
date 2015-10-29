@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Murder Mystery</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Location: Interactive Products Design Lab (IPDL) </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="j_background.html">Background</a></li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+   
+  <div class="container-fluid">
+    <header class="col-xs-12">
+      <h1>What is this place?</h1>
+      <h2>IDPL</h2>
+    </header>
+
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <img src="img/lab.jpg" alt="prof pic" class="img-responsive">
+      </div>
+    
+
+    <section class="col-sm-6 col-md-6">
+      <h3><i class="glyphicon glyphicon-equalizer"></i> History</h3>
+      <p>The Interactive Product Design Lab (IPDL) is a purpose-built lab designed to support both teaching and research by providing students access to investigate, explore and experiment with an extensive array of new technologies. Central to this concept, the School of Industrial Design has placed a high priority on the need to foster and develop interdisciplinary team-based collaboration with other educational and research units from across the campus including School of Interactive Computing, School of Mechanical Engineering, the Graphics Visualization and Usability Lab (GVU) and CATEA, the Center for Assistive Technology and Environmental Access. The Interactive Product Design Lab was built in the summer of 2011 and opened in time for the Fall Semester 2011.
+
+      The Lab was specifically designed to support team-based collaboration – This lab features six workstations designed to accommodate 6 teams of 4 or 12 teams of 2. Each workstation is fully equipped for electronic design and fabrication with two sets of dedicated power supplies, soldering stations, meters and hand tools. The installation is designed around the award winning Steelcase media:scape system that serendipitously happened to closely match the design spec for the original lab concept.
+        
+      </p>
+    </section>
+    </div>
+
+    <footer class="col-sm-12">
+    <p> &copy;interactiveAvocados 2015</p>
+    </footer>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    var firstName="kris";
+    var lastName="woolford"
+    // alert("Hello " + firstName + " " + lastName );
+  
+    var triggerBtn = document.getElementById("trigger");
+    // welcomeText.innerHTML = "Welcome," + firstName + "!";
+
+    var visit = 10;
+
+function specialMessage(){
+    if (visit==1){
+      welcomeText.innerHTML = "Welcome," + firstName + "! We hope you enjoy your first visit!";
+    } else if (visit>=10){
+      welcomeText.innerHTML = "Welcome," + firstName + "! You get 10% of for being a valued customer!";
+    }else{
+      welcomeText.innerHTML = "Welcome back " + firstName;
+    }
+}
+
+  triggerBtn.onclick = function() {
+    specialMessage();
+  }
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
