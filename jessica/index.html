@@ -131,37 +131,6 @@
 
     </div>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-    var firstName="kris";
-    var lastName="woolford"
-    // alert("Hello " + firstName + " " + lastName );
-  
-    var triggerBtn = document.getElementById("trigger");
-    // welcomeText.innerHTML = "Welcome," + firstName + "!";
-
-    var visit = 10;
-
-function specialMessage(){
-    if (visit==1){
-      welcomeText.innerHTML = "Welcome," + firstName + "! We hope you enjoy your first visit!";
-    } else if (visit>=10){
-      welcomeText.innerHTML = "Welcome," + firstName + "! You get 10% of for being a valued customer!";
-    }else{
-      welcomeText.innerHTML = "Welcome back " + firstName;
-    }
-}
-
-  triggerBtn.onclick = function() {
-    specialMessage();
-  }
-
-    </script>
   </body>
 </html>
 
